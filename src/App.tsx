@@ -1,6 +1,6 @@
 import { Divider, Flex, Text } from "@chakra-ui/react";
 import Background from "./Components/Background";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/navbar/Navbar";
 
 const App = () => {
   return (
