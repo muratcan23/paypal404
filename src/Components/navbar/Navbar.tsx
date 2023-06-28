@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import LeftNavbar from "./LeftNavbar";
+import RightNavbar from "./RightNavbar";
 
 const Navbar = () => {
   return (
@@ -9,9 +10,9 @@ const Navbar = () => {
       bg="#fff"
       alignItems="center"
       justifyContent="center"
-      border="1px solid red"
     >
       <LeftNavbar />
+      <RightNavbar />
     </Flex>
   );
 };
