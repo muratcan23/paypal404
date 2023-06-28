@@ -15,12 +15,17 @@ const RightNavbar = () => {
           as="button"
           w="64px"
           h="40px"
+          borderRadius="20px"
           background="white"
           border="none"
           alignItems="center"
           justifyContent="center"
           p={0}
           mt="auto"
+          _hover={{
+            border: "1px solid gray",
+            "& >p": { color: "#0070e0", fontWeight: "bold" },
+          }}
         >
           <Text fontSize="18px">Help </Text>
         </Flex>
