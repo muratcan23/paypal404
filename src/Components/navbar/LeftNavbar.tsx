@@ -36,7 +36,7 @@ const LeftNavbar = () => {
             _hover={{ cursor: "pointer", background: "#e3f9fe" }}
           >
             <Text
-              fontSize="20px"
+              fontSize="18px"
               color="#001c64"
               fontWeight="regular"
               textAlign="center"

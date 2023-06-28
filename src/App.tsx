@@ -1,15 +1,12 @@
-import { Divider, Flex, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Background from "./Components/Background";
 import Navbar from "./Components/navbar/Navbar";
 
 const App = () => {
   return (
-    <Flex flexDir="column">
+    <Flex flexDir="column" minH="100vh" bg="#faf8f5">
       <Navbar />
-      <Divider border="0.5px  black" />
-      <Flex>
-        <Text>Appp</Text>
-      </Flex>
+      {/* <Divider border="1px solid  black" /> */}
       <Background />
     </Flex>
   );
