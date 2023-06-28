@@ -5,8 +5,10 @@ import RightNavbar from "./RightNavbar";
 const Navbar = () => {
   return (
     <Flex w="100%" bg="#fff" alignItems="center" justifyContent="center">
-      <LeftNavbar />
-      <RightNavbar />
+      <Flex w="88%" alignItems="center" justifyContent="center">
+        <LeftNavbar />
+        <RightNavbar />
+      </Flex>
     </Flex>
   );
 };

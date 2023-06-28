@@ -19,6 +19,8 @@ const RightNavbar = () => {
           border="none"
           alignItems="center"
           justifyContent="center"
+          p={0}
+          mt="auto"
         >
           <Text fontSize="18px">Help </Text>
         </Flex>
@@ -26,14 +28,18 @@ const RightNavbar = () => {
           as="button"
           w="120px"
           h="48px"
-          border="2px solid #0070e0"
+          border="2px solid #003087"
           borderRadius="25px"
           bg="white"
           alignItems="center"
           justifyContent="center"
+          _hover={{
+            borderColor: "#0070e0",
+            "& > p": { color: "#0070e0" },
+          }}
         >
-          <Text fontWeight="bold" fontSize="22px">
-            Login
+          <Text fontWeight="bold" fontSize="18px" textColor="#003087" p={0}>
+            Log In
           </Text>
         </Flex>
 
@@ -41,13 +47,15 @@ const RightNavbar = () => {
           as="button"
           w="120px"
           h="48px"
-          border="2px solid #0070e0"
+          border="none"
           borderRadius="25px"
           bg="white"
           alignItems="center"
           justifyContent="center"
+          background="#003087"
+          _hover={{ background: "#0070e0" }}
         >
-          <Text fontWeight="bold" fontSize="22px">
+          <Text fontWeight="bold" fontSize="20px" textColor="white">
             Sign Up
           </Text>
         </Flex>
