@@ -1,9 +1,16 @@
-import { Flex, Stack, Text } from "@chakra-ui/react";
+import { Flex, HStack, Stack, Text } from "@chakra-ui/react";
 
 const RightNavbar = () => {
   return (
-    <Flex>
-      <Stack flexDir="row">
+    <HStack
+      justifyContent="end"
+      alignItems="center"
+      h="88px"
+      w="100%"
+      bg="#fff"
+      mr="140px"
+    >
+      <Stack flexDir="row" spacing={12}>
         <Flex
           as="button"
           w="64px"
@@ -45,7 +52,7 @@ const RightNavbar = () => {
           </Text>
         </Flex>
       </Stack>
-    </Flex>
+    </HStack>
   );
 };
 

@@ -4,13 +4,7 @@ import RightNavbar from "./RightNavbar";
 
 const Navbar = () => {
   return (
-    <Flex
-      h="88px"
-      w="100%"
-      bg="#fff"
-      alignItems="center"
-      justifyContent="center"
-    >
+    <Flex w="100%" bg="#fff" alignItems="center" justifyContent="center">
       <LeftNavbar />
       <RightNavbar />
     </Flex>

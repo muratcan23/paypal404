@@ -1,4 +1,4 @@
-import { Box, Flex, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Stack, Text } from "@chakra-ui/react";
 import DownArrow from "../../icons/DownArrow";
 import PaypalIcon from "../../icons/PaypalIcon";
 
@@ -6,7 +6,15 @@ const NavbarData = ["Personel", "Business", "Enterprise", "Developer"];
 
 const LeftNavbar = () => {
   return (
-    <Flex justifyContent="flex-start" alignItems="center" ml={10}>
+    <HStack
+      justifyContent="start"
+      alignItems="center"
+      ml={10}
+      h="88px"
+      w="100%"
+      bg="#fff"
+      marginLeft="140px"
+    >
       <Stack direction="row" spacing={12} align="center">
         <Box
           as="button"
@@ -50,7 +58,7 @@ const LeftNavbar = () => {
           </Box>
         ))}
       </Stack>
-    </Flex>
+    </HStack>
   );
 };
 
