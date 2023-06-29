@@ -26,6 +26,7 @@ const RightNavbar = () => {
             border: "1px solid gray",
             "& >p": { color: "#0070e0", fontWeight: "bold" },
           }}
+          cursor="pointer"
         >
           <Text fontSize="18px">Help </Text>
         </Flex>
@@ -42,6 +43,7 @@ const RightNavbar = () => {
             borderColor: "#0070e0",
             "& > p": { color: "#0070e0" },
           }}
+          cursor="pointer"
         >
           <Text fontWeight="bold" fontSize="18px" textColor="#003087" p={0}>
             Log In
@@ -59,6 +61,7 @@ const RightNavbar = () => {
           justifyContent="center"
           background="#003087"
           _hover={{ background: "#0070e0" }}
+          cursor="pointer"
         >
           <Text fontWeight="bold" fontSize="20px" textColor="white">
             Sign Up
