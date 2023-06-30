@@ -2,8 +2,32 @@ import { Box, Flex, HStack, Stack, Text } from "@chakra-ui/react";
 import DownArrow from "../../icons/DownArrow";
 import PaypalIcon from "../../icons/PaypalIcon";
 
-const NavbarData = ["Personel", "Business", "Enterprise", "Developer"];
-
+const NavbarData = [
+  {
+    label: "Personel",
+    hoverColor: "#001c64",
+    hoverBgColor: "#e3f9fe",
+    hoverTextColor: "#003087",
+  },
+  {
+    label: "Business",
+    hoverColor: "#001c64",
+    hoverBgColor: "#e3f9fe",
+    hoverTextColor: "#003087",
+  },
+  {
+    label: "Enterprise",
+    hoverColor: "#001c64",
+    hoverBgColor: "#e3f9fe",
+    hoverTextColor: "#003087",
+  },
+  {
+    label: "Developer",
+    hoverColor: "#ff0000",
+    hoverBgColor: "white",
+    hoverTextColor: "#0070e0",
+  },
+];
 const LeftNavbar = () => {
   return (
     <HStack
@@ -37,20 +61,29 @@ const LeftNavbar = () => {
             display="flex"
             justifyContent="center"
             alignItems="center"
-            background="white"
+            background={item.hoverBgColor}
+            borderRadius="20px"
             border="none"
-            borderRadius="15px"
             marginBottom="3px"
-            _hover={{ cursor: "pointer", background: "#e3f9fe" }}
+            _hover={{
+              cursor: "pointer",
+              background: item.hoverBgColor,
+              border:
+                index === NavbarData.length - 1 ? "1px solid #ccc" : "none",
+            }}
           >
             <Text
               fontSize="18px"
-              color="#001c64"
+              color="#003087"
               fontWeight="regular"
               textAlign="center"
               fontFamily="Arial, sans-serif"
+              _hover={{
+                color: item.hoverTextColor,
+                fontWeight: "bold",
+              }}
             >
-              {item}
+              {item.label}
             </Text>
             <Flex>
               <DownArrow color="#001c64" />
