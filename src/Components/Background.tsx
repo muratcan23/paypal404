@@ -1,5 +1,4 @@
 import { Flex, Text } from "@chakra-ui/react";
-import CornerIcon from "../icons/CornerIcon";
 import WiteBoxes from "./WiteBoxes";
 
 const Background = () => {
@@ -10,13 +9,11 @@ const Background = () => {
         bg="#faf8f5"
         display="flex"
         justifyContent="center"
-        alignItems="flex-start"
+        alignItems="center"
         paddingTop="30px"
+        flexDirection="column"
       >
-        <Flex direction="column" alignItems="center">
-          <Flex opacity="1" transform="none" alignItems="center">
-            <CornerIcon />
-          </Flex>
+        <Flex direction="column" alignItems="center" mb="auto">
           <Text
             color="#001c64"
             fontWeight="bold"
@@ -30,24 +27,24 @@ const Background = () => {
           >
             404 error
           </Text>
-          <Flex width="600px" height="105px" alignItems="center">
+          <Flex width="600px" height="105px" alignItems="center" mt="25px">
             <Text
               color="#001c64"
               fontWeight="bold"
               textAlign="center"
-              fontSize="56px"
+              fontSize="66px"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               lineHeight={1.1}
             >
               This page couldn’t be found.
             </Text>
           </Flex>
-          <Flex>
+          <Flex mt="50px">
             <Text
               color="#001c64"
               fontWeight="bold"
               textAlign="center"
-              fontSize="36px"
+              fontSize="44px"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               lineHeight={1.2}
             >
@@ -55,8 +52,9 @@ const Background = () => {
             </Text>
           </Flex>
         </Flex>
+
+        <WiteBoxes />
       </Flex>
-      <WiteBoxes />
     </>
   );
 };

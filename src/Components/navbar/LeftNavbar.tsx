@@ -85,9 +85,12 @@ const LeftNavbar = () => {
             >
               {item.label}
             </Text>
-            <Flex>
-              <DownArrow color="#001c64" />
-            </Flex>
+
+            {index !== NavbarData.length - 1 && (
+              <Flex>
+                <DownArrow color="#001c64" />
+              </Flex>
+            )}
           </Box>
         ))}
       </Stack>

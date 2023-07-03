@@ -6,7 +6,6 @@ const App = () => {
   return (
     <Flex flexDir="column" minH="100vh" bg="#faf8f5">
       <Navbar />
-
       <Background />
     </Flex>
   );
