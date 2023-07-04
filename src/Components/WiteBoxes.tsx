@@ -45,7 +45,13 @@ const WiteBoxes = () => {
           mb="auto"
           ml={20}
         >
-          <Flex padding="48px" w="248px" h="183px" flexDirection="column">
+          <Flex
+            padding="48px"
+            w="248px"
+            h="183px"
+            flexDirection="column"
+            justifyContent="center"
+          >
             <Flex>
               <Text
                 fontSize="30px"
@@ -58,9 +64,11 @@ const WiteBoxes = () => {
             </Flex>
             <Flex>
               <Text
-                mt={2}
                 fontFamily="PayPalOpen-Regular,Helvetica Neue,Arial,sans-serif"
                 lineHeight={1.6}
+                color="#001c64"
+                fontWeight="semibold"
+                fontSize="20px"
               >
                 {item.p}
               </Text>

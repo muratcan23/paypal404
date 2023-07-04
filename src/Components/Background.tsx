@@ -35,6 +35,7 @@ const Background = () => {
               fontSize="62px"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               lineHeight={1.1}
+              letterSpacing="-.02em"
             >
               This page couldn’t be found.
             </Text>

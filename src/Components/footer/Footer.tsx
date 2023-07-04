@@ -1,6 +1,24 @@
 import { Divider, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import UsaIcon from "../../icons/UsaIcon";
 
+const FooterLinksUp = [
+  { text: "Help", url: "/help" },
+  { text: "Contact", url: "/contact" },
+  { text: "Fees", url: "/fees" },
+  { text: "Security", url: "/security" },
+  { text: "Apps", url: "/apps" },
+  { text: "Shop", url: "/shop" },
+  { text: "Enterprise", url: "/enterprise" },
+  { text: "Partners", url: "/partners" },
+];
+const FooterLinksDown = [
+  { text: "About", url: "/about" },
+  { text: "Newsroom", url: "/newsroom" },
+  { text: "Jobs", url: "/jobs" },
+  { text: "Inverstor Realtions", url: "/investors" },
+  { text: "Values in Action", url: "/valPolicy" },
+];
+
 const Footer = () => {
   return (
     <Flex
@@ -21,84 +39,18 @@ const Footer = () => {
         </Flex>
         <Flex w="100%" h="45px" mt="30px" padding="0">
           <HStack spacing={35} w="700px">
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Help
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Contact
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Fees
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Security
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Apps
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Shop
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Enterprise
-            </Text>
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Partners
-            </Text>
+            {FooterLinksUp.map((link) => (
+              <Text
+                key={link.text}
+                fontSize="14px"
+                color="#001c64"
+                fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+                fontWeight="bold"
+                _hover={{ cursor: "pointer", textDecoration: "underline" }}
+              >
+                {link.text}
+              </Text>
+            ))}
           </HStack>
           <Flex padding="2px" ml="auto" p="1px">
             <Image
@@ -116,65 +68,17 @@ const Footer = () => {
         {/* Under Divider */}
         <Flex w="100%" h="45px" mb="auto" ml="auto">
           <HStack spacing={35} w="700px">
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              About
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Newsroom
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Jobs
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Investors Relations
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Values in Action
-            </Text>
-
-            <Text
-              fontSize="14px"
-              color="#001c64"
-              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
-              fontWeight="bold"
-              _hover={{ cursor: "pointer", textDecoration: "underline" }}
-            >
-              Public Policy
-            </Text>
+            {FooterLinksDown.map((link) => (
+              <Text
+                fontSize="14px"
+                color="#001c64"
+                fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+                fontWeight="bold"
+                _hover={{ cursor: "pointer", textDecoration: "underline" }}
+              >
+                {link.text}
+              </Text>
+            ))}
 
             {/* Righ side */}
           </HStack>
