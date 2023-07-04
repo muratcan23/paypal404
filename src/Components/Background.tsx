@@ -10,7 +10,7 @@ const Background = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        paddingTop="30px"
+        paddingTop="25px"
         flexDirection="column"
       >
         <Flex direction="column" alignItems="center" mb="auto">
@@ -18,7 +18,7 @@ const Background = () => {
             color="#001c64"
             fontWeight="bold"
             textAlign="center"
-            fontSize="22px"
+            fontSize="18px"
             width="100%"
             marginBottom="16px"
             fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
@@ -32,7 +32,7 @@ const Background = () => {
               color="#001c64"
               fontWeight="bold"
               textAlign="center"
-              fontSize="66px"
+              fontSize="62px"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               lineHeight={1.1}
             >

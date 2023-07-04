@@ -42,7 +42,8 @@ const WiteBoxes = () => {
           boxShadow="md"
           borderRadius="10%"
           paddingBlockStart={1}
-          mb="4px"
+          mb="auto"
+          ml={20}
         >
           <Flex padding="48px" w="248px" h="183px" flexDirection="column">
             <Flex>

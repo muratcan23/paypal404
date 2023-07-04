@@ -10,7 +10,7 @@ const Footer = () => {
       justifyContent="center"
       alignItems="center"
     >
-      <Flex w="70%" h="227px" flexDirection="column">
+      <Flex w="80%" h="227px" flexDirection="column">
         <Flex w="673px" h="51px">
           <Flex w="193px" h="51px" cursor="pointer">
             <Image
@@ -19,75 +19,83 @@ const Footer = () => {
             />
           </Flex>
         </Flex>
-        <Flex w="100%" h="45px" mt="30px">
+        <Flex w="100%" h="45px" mt="30px" padding="0">
           <HStack spacing={35} w="700px">
             <Text
               fontSize="14px"
-              color="#003087"
+              color="#001c64"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
             >
               Help
             </Text>
 
             <Text
               fontSize="14px"
-              color="#003087"
+              color="#001c64"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
             >
               Contact
             </Text>
 
             <Text
               fontSize="14px"
-              color="#003087"
+              color="#001c64"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
             >
               Fees
             </Text>
 
             <Text
               fontSize="14px"
-              color="#003087"
+              color="#001c64"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
             >
               Security
             </Text>
 
             <Text
               fontSize="14px"
-              color="#003087"
+              color="#001c64"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
             >
               Apps
             </Text>
 
             <Text
               fontSize="14px"
-              color="#003087"
+              color="#001c64"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
             >
               Shop
             </Text>
 
             <Text
               fontSize="14px"
-              color="#003087"
+              color="#001c64"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
             >
               Enterprise
             </Text>
             <Text
               fontSize="14px"
-              color="#003087"
+              color="#001c64"
               fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
               fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
             >
               Partners
             </Text>
@@ -104,7 +112,122 @@ const Footer = () => {
             <UsaIcon />
           </Flex>
         </Flex>
-        <Divider color="grey" h="1px" />
+        <Divider orientation="horizontal" border=".5x solid grey" />
+        {/* Under Divider */}
+        <Flex w="100%" h="45px" mb="auto" ml="auto">
+          <HStack spacing={35} w="700px">
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              About
+            </Text>
+
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Newsroom
+            </Text>
+
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Jobs
+            </Text>
+
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Investors Relations
+            </Text>
+
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Values in Action
+            </Text>
+
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Public Policy
+            </Text>
+
+            {/* Righ side */}
+          </HStack>
+          <Flex padding="2px" ml="auto" p="1px">
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Regular,Helvetica"
+              mr="15px"
+            >
+              © 1999–2023
+            </Text>
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+              mr="15px"
+            >
+              Accessibility
+            </Text>
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+              mr="15px"
+            >
+              Privacy
+            </Text>
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+              mr="15px"
+            >
+              Cookies
+            </Text>
+            <Text
+              fontSize="14px"
+              color="#001c64"
+              fontFamily="PayPalOpen-Bold,Helvetica Neue,Arial,sans-serif"
+              fontWeight="bold"
+              _hover={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Legal
+            </Text>
+          </Flex>
+        </Flex>
       </Flex>
     </Flex>
   );
