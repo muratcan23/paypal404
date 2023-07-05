@@ -80,7 +80,7 @@ const Footer = () => {
               </Text>
             ))}
 
-            {/* Righ side */}
+            {/* Under Divider and Righ side */}
           </HStack>
           <Flex padding="2px" ml="auto" p="1px">
             <Text
